@@ -11,6 +11,10 @@ app.get("/login", (req, res) => {
     res.send("<h1>login route</h1>")
 })
 
+app.get("/logout", (req, res) => {
+    res.send("<h1>Loging Out Rooute</h1>")
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${process.env.PORT}`);
 })
